@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1fce4aa8d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/app.js"></script>
+
+    <title>Practice</title>
+</head>
+<body>
+    <header id="header-container">
+        <h1>Youtube Playlist App</h1>
+    </header>
+    <main id="main-container">
+            <div id="video-player">
+                <div class="youtube-video-container">
+                    <iframe
+                    id="current-video"
+                    src=""
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    ></iframe>
+                    <div id="placeholderVideo">
+                        Add a new video below!
+                    </div>
+                </div>
+            <div id="control-bar">
+                <button id="prev-video-button" class="control-button"><</button>
+                <button id="next-video-button" class="control-button">></button>
+            </div>
+        </div>
+        <form id="video-submission-form">
+            <input id="video-input" type="text" placeholder="Please enter video URL...">
+            <button type="submit" id="video-submit-button">
+                Add
+                <i class="fas fa-plus-square"></i>
+            </button>
+        </form>
+        
+        <div id="sidebar">
+            <ul id="playlist-videos">
+                
+            </ul>
+
+        </div>
+    </main>
+</body>
+</html>
