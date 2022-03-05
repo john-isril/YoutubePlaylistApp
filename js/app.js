@@ -20,7 +20,7 @@ $(document).ready(() => {
     const playlistVideos = document.getElementById("playlist-videos");
     
     let videos = [];
-    let apiKey = "AIzaSyC2dlr58_NbswrJUHmT49idAOIi9XQm5AE";
+    let apiKey = "MY_API_KEY";
     let currentVideoIndex = -1;
     
     function extractID(url) {
